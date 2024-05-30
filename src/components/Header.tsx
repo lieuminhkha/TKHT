@@ -25,6 +25,12 @@ const Header = () => {
           >
             Khuyến mãi/Sự kiện
           </Link>
+          <Link
+            to="/booking"
+            className="px-2 text-xl font-bold tracking-tight text-orange-700"
+          >
+            Test Đặt vé
+          </Link>
         </div>
         <div className="md:hidden">
           <MobileNav />

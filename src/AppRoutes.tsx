@@ -8,6 +8,8 @@ import ProtectedRoute from "./auth/ProtectedRoute";
 import AuthenticationPage from "./pages/AuthenticationPage";
 import TimeAndPositionBooking from "./pages/TimeAndPositionBooking";
 import EventsPage from "./pages/EventsPage";
+import BookingPage from "./pages/BookingPage";
+import SeatPage from "./pages/SeatPage";
 const AppRoutes = () => {
   return (
     <Routes>
@@ -61,6 +63,22 @@ const AppRoutes = () => {
         element={
           <Layout>
             <EventsPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/booking"
+        element={
+          <Layout>
+            <BookingPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/seat"
+        element={
+          <Layout>
+            <SeatPage />
           </Layout>
         }
       />
