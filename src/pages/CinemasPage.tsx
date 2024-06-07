@@ -13,7 +13,7 @@ const CinemasPage = () => {
       <div className="">
         <div className="w-full">
           <div className="py-5">
-            <div className="mx-auto w-4/5 text-center text-white text-2xl font-bold">
+            <div className="mx-auto w-4/5 text-center text-black text-2xl font-bold">
               <h1>Hệ thống rạp</h1>
             </div>
           </div>
@@ -27,7 +27,7 @@ const CinemasPage = () => {
       <div className="grid md:grid-cols-2 gap-5 bg-[#000000]">
         <img src={landingPageImage} alt="" />
         <div className="flex flex-col items-center justify-center gap-4 text-center">
-          <span className="font-bold text-3xl tracking-tighter text-white">
+          <span className="font-bold text-3xl tracking-tighter text-black">
             Đặt vé siêu nhanh
           </span>
           <span className="text-orange-700">

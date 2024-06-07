@@ -2,7 +2,7 @@ import React from 'react';
 
 const AuthenticationPage: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-white text-black">
       <div className="max-w-5xl w-full flex justify-between space-x-4 gap-1">
         {/* Login Form */}
         <div className="bg-gray-800 p-8 rounded-lg w-5/12">
@@ -71,7 +71,7 @@ const AuthenticationPage: React.FC = () => {
                   className="w-full p-2 rounded bg-gray-700 border border-gray-600"
                   placeholder="Số điện thoại"
                 />
-            </div>
+              </div>
             </div>
             <div className='w-full flex mb-4 gap-6'>
               <div className="mb-4 w-1/2">
@@ -91,7 +91,7 @@ const AuthenticationPage: React.FC = () => {
                 />
               </div>
             </div>
-            
+
             <div className="mb-4">
               <label className="block mb-2 text-sm font-medium">Ngày sinh *</label>
               <div className="flex space-x-2">

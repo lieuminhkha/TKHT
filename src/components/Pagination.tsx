@@ -18,18 +18,18 @@
 //     <Pagination>
 //       <PaginationContent>
 //         <PaginationItem>
-//           <PaginationPrevious className='border-2 border-orange-700 hover:bg-orange-700 hover:text-white' onClick={() => handlePageClick(currentPage - 1)} isActive={currentPage === 1} />
+//           <PaginationPrevious className='border-2 border-orange-700 hover:bg-orange-700 hover:text-black' onClick={() => handlePageClick(currentPage - 1)} isActive={currentPage === 1} />
 //         </PaginationItem>
 //         {[...Array(totalPages)].map((_, index) => (
 //           <PaginationItem key={index}>
-//             <PaginationLink className='text-white hover:bg-orange-700' href="#" onClick={() => handlePageClick(index + 1)}>{index + 1}</PaginationLink>
+//             <PaginationLink className='text-black hover:bg-orange-700' href="#" onClick={() => handlePageClick(index + 1)}>{index + 1}</PaginationLink>
 //           </PaginationItem>
 //         ))}
 //         <PaginationItem>
-//           <PaginationEllipsis className='text-white'/>
+//           <PaginationEllipsis className='text-black'/>
 //         </PaginationItem>
 //         <PaginationItem>
-//           <PaginationNext className='border-2 border-orange-700 hover:bg-orange-700 hover:text-white' onClick={() => handlePageClick(currentPage + 1)} isActive={currentPage === totalPages} />
+//           <PaginationNext className='border-2 border-orange-700 hover:bg-orange-700 hover:text-black' onClick={() => handlePageClick(currentPage + 1)} isActive={currentPage === totalPages} />
 //         </PaginationItem>
 //       </PaginationContent>
 //     </Pagination>

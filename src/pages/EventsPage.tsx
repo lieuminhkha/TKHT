@@ -15,7 +15,7 @@ const EventsPage = () => {
       <div>
         <div className="w-full">
           <div className="py-5">
-            <div className="mx-auto w-4/5 text-center text-white text-2xl font-bold">
+            <div className="mx-auto w-4/5 text-center text-black text-2xl font-bold">
               <h1>Sự kiện</h1>
             </div>
           </div>
@@ -24,18 +24,6 @@ const EventsPage = () => {
           {fakeEvents.map((item, index) => (
             <EventCard key={index} event={item} />
           ))}
-        </div>
-      </div>
-      <div className="grid md:grid-cols-2 gap-5 bg-[#000000]">
-        <img src={landingPageImage} alt="" />
-        <div className="flex flex-col items-center justify-center gap-4 text-center">
-          <span className="font-bold text-3xl tracking-tighter text-white">
-            Đặt vé siêu nhanh
-          </span>
-          <span className="text-orange-700">
-            Tải xuống Ứng dụng SIUUU để nhận nhiều ưu đãi hơn
-          </span>
-          <img src={appDownloadImage} />
         </div>
       </div>
     </div>

@@ -1,0 +1,31 @@
+.date-picker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.date-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.date-item.selected {
+    color: red;
+    font-weight: bold;
+}
+
+.day-of-week {
+    font-size: 16px;
+    color: gray;
+}
+
+.date-number {
+    font-size: 24px;
+    color: black;
+}

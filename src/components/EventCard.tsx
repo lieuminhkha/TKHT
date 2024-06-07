@@ -25,7 +25,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
     setIsOpen(false);
   }
   return (
-    <div className="movie-card  rounded-lg overflow-hidden shadow-md  bg-gray-900 pb-5 ">
+    <div className="movie-card  rounded-lg overflow-hidden shadow-md  bg-white pb-5 ">
       <div className=" w-4/5 mx-auto pb-2">
         <img
           src={eventImage}
@@ -39,7 +39,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
         >
           {eventName}
         </h2>
-        <h3 className="text-white text-[14px]">
+        <h3 className="text-black text-[14px]">
           Diễn ra từ : {timeStart} - {timeEnd}
         </h3>
       </div>

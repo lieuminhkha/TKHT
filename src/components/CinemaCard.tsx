@@ -26,7 +26,7 @@ const CinemaCard: React.FC<CinemaCardProps> = ({ show }) => {
     setIsOpen(false);
   }
   return (
-    <div className="movie-card  rounded-lg overflow-hidden shadow-md  bg-gray-900 pb-5 ">
+    <div className="movie-card  rounded-lg overflow-hidden shadow-md  bg-white pb-5 ">
       <div className="text-center w-4/5 mx-auto pb-2">
         <img
           src={cinemaImage}
@@ -36,11 +36,11 @@ const CinemaCard: React.FC<CinemaCardProps> = ({ show }) => {
       </div>
       <div className="flex items-center justify-center gap-2 p-2">
         <div>
-          <h2 className="text-white text-[16px]">{cinemaName}</h2>
+          <h2 className="text-black text-[16px]">{cinemaName}</h2>
         </div>
         <div>
           <button
-            className="buy-button bg-orange-700 text-white text-sm px-4 py-2 rounded-md text-center"
+            className="buy-button bg-orange-700 text-black text-sm px-4 py-2 rounded-md text-center"
             onClick={openModal}
           >
             Thông tin chi tiết

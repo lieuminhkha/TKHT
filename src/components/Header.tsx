@@ -4,7 +4,7 @@ import MainNav from "./MainNav";
 import logo from "../assets/logo-untitled-1-01-1_590x500_0_0_517739.jpg";
 const Header = () => {
   return (
-    <div className="border-b-2 border-b-orange-700 py-6 bg-gray-900">
+    <div className="border-b-2 border-b-orange-700 py-6 bg-white">
       <div className="container mx-auto flex justify-between items-center">
         <div className=" flex items-center w-1/2 ">
           <Link

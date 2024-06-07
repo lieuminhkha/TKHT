@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
-import MovieCard from './MovieCard'; 
+import React, { useState } from 'react';
+import MovieCard from './MovieCard';
 import {
-    Pagination,
-    PaginationContent,
-    PaginationEllipsis,
-    PaginationItem,
-    PaginationLink,
-    PaginationNext,
-    PaginationPrevious,
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
 } from "@/components/ui/pagination"; // Adjust the import path according to your project structure
 import MovieList from './MovieList';
 interface Movie {
@@ -28,15 +28,15 @@ export interface MovieListProps {
   movies: Movie[];
 }
 
-const MoviesComingSoon: React.FC<MovieListProps> = ({ movies })=> {
+const MoviesComingSoon: React.FC<MovieListProps> = ({ movies }) => {
   return (
-    <div className="movie-list flex flex-col items-center justify-center min-h-screen gap-8 text-xl bg-gray-900">
-      <h2 className="text-lg md:text-xl lg:text-2xl text-white">Phim sắp chiếu</h2>
+    <div className="movie-list flex flex-col items-center justify-center min-h-screen gap-8 text-xl bg-white">
+      <h2 className="text-lg md:text-xl lg:text-2xl text-black">Phim sắp chiếu</h2>
       <div className="flex flex-wrap justify-center">
-        <MovieList movies={movies} isSaleTicket={false}/>
+        <MovieList movies={movies} isSaleTicket={false} />
       </div>
     </div>
   );
-}
+};
 
-export default MoviesComingSoon
+export default MoviesComingSoon;

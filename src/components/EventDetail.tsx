@@ -56,10 +56,10 @@ const EventDetail: React.FC<EventDetailProps> = ({
                     <h3 className="font-medium leading-6 text-orange-700 text-2xl pb-3">
                       {event.eventName}
                     </h3>
-                    <p className="text-white text-base mb-3">
+                    <p className="text-black text-base mb-3">
                       Diễn ra từ : {event.timeStart} - {event.timeEnd}
                     </p>
-                    <p className="text-white text-base">{event.description}</p>
+                    <p className="text-black text-base">{event.description}</p>
                   </div>
                 </div>
               </Dialog.Panel>
