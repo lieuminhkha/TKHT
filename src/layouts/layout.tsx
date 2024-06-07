@@ -1,19 +1,19 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import AppFooter from "@/components/ui/AppFooter";
+import AppHeader from "@/components/ui/AppHeader";
 
 type Props = {
   children: React.ReactNode;
-  showHero?: boolean;
 };
 
-const Layout = ({ children, showHero = false }: Props) => {
+const Layout = ({ children }: Props) => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-900">
-      <Header />
-      {showHero && <Hero />}
-      <div className="container mx-auto flex-1 py-10 bg-gray-900">{children}</div>
-      <Footer />
+    <div className="flex flex-col min-h-screen bg-white">
+      <AppHeader />
+      <div className="container mx-auto flex-1 py-10 bg-white">{children}</div>
+      <AppFooter />
     </div>
   );
 };

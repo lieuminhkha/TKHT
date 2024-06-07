@@ -56,10 +56,10 @@ const CinemaDetail: React.FC<CinemaDetailProps> = ({
                     <h3 className="font-medium leading-6 text-orange-700 text-2xl pb-3">
                       {show.cinemaName}
                     </h3>
-                    <p className="text-white text-base">
+                    <p className="text-black text-base">
                       Địa chỉ: {show.cinemaAddress}
                     </p>
-                    <ul className="mt-4 text-base text-white gap-2">
+                    <ul className="mt-4 text-base text-black gap-2">
                       <li>
                         Định dạng: <strong> {show.format}</strong>
                       </li>

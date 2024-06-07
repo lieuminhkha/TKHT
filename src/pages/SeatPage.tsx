@@ -81,7 +81,7 @@ const SeatPage: React.FC = () => {
 
   return (
     <div>
-      <div className="text-white text-2xl font-semibold text-center mb-10 flex items-center justify-between">
+      <div className="text-black text-2xl font-semibold text-center mb-10 flex items-center justify-between">
         <div>
           <FontAwesomeIcon
             icon={faArrowLeft}
@@ -95,7 +95,7 @@ const SeatPage: React.FC = () => {
       <div className="p-5 flex items-start gap-2">
         <div className="w-3/5">
           <div className="mb-5 flex justify-between">
-            <div className="text-white flex items-center gap-1">
+            <div className="text-black flex items-center gap-1">
               <h2>Ghế thường</h2>
               <div>
                 <MdEventSeat className="mx-1" color="#fff" />
@@ -127,7 +127,7 @@ const SeatPage: React.FC = () => {
             </div>
           </div>
           <table className="w-full">
-            <tbody className="text-white">
+            <tbody className="text-black">
               {rows.map((row, rowIndex) => (
                 <>
                   {row === "K" && (
@@ -154,11 +154,11 @@ const SeatPage: React.FC = () => {
                                 style={{
                                   color:
                                     indexSelectSeat === seatIndex &&
-                                    rowSelect === row
+                                      rowSelect === row
                                       ? "#65D20F" // Ghế được chọn
                                       : isVIPSeat(row, seatIndex)
-                                      ? "#FFF333" // Ghế VIP
-                                      : "white", // Ghế thường
+                                        ? "#FFF333" // Ghế VIP
+                                        : "white", // Ghế thường
                                 }}
                               />
                             </Link>
@@ -174,7 +174,7 @@ const SeatPage: React.FC = () => {
           </table>
         </div>
         <div className="w-2/5">
-          <div className="border border-solid border-[#454D6A] py-5 rounded-2xl text-white w-4/5 mx-auto">
+          <div className="border border-solid border-[#454D6A] py-5 rounded-2xl text-black w-4/5 mx-auto">
             <div className="border-b border-solid border-[#454D6A] px-5 pb-5">
               <h2 className="font-bold text-[16px] pb-1">BHD Star Pham Hung</h2>
               <h3>30/05/2024 - Suất chiếu : 17:00</h3>
@@ -192,17 +192,17 @@ const SeatPage: React.FC = () => {
             </div>
             {indexSelectSeat < 0 ? (
               <div className="p-5">
-                <p className="font-bold text-xl  text-white">
+                <p className="font-bold text-xl  text-black">
                   Bạn chưa chọn ghế
                 </p>
               </div>
             ) : (
               <div>
                 <div className="p-5 flex item-center justify-between">
-                  <h2 className="font-bold text-xl  text-white">Tổng tiền</h2>
-                  <p className="font-bold text-xl  text-white">90.000 đồng</p>
+                  <h2 className="font-bold text-xl  text-black">Tổng tiền</h2>
+                  <p className="font-bold text-xl  text-black">90.000 đồng</p>
                 </div>
-                <div className="w-4/5 mx-auto text-center text-xl text-white bg-[#65D20F] rounded-sm  py-2 mt-3">
+                <div className="w-4/5 mx-auto text-center text-xl text-black bg-[#65D20F] rounded-sm  py-2 mt-3">
                   <button>Thanh toán</button>
                 </div>
               </div>

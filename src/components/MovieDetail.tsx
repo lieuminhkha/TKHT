@@ -53,7 +53,7 @@ const MovieDetail: React.FC<MovieDetailProps> = ({
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md border border-transparent bg-orange-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                        className="inline-flex justify-center rounded-md border border-transparent bg-orange-700 px-4 py-2 text-sm font-medium text-black hover:bg-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                         onClick={closeMovieDetail}
                       >
                         Mua vé ngay
@@ -64,8 +64,8 @@ const MovieDetail: React.FC<MovieDetailProps> = ({
                     <h3 className="font-medium leading-6 text-orange-700 text-2xl pb-3">
                       {movie.title}
                     </h3>
-                    <p className="text-white text-base">{movie.description}</p>
-                    <ul className="mt-4 text-base text-white gap-2">
+                    <p className="text-black text-base">{movie.description}</p>
+                    <ul className="mt-4 text-base text-black gap-2">
                       <li>
                         Phân loại:{" "}
                         <strong>

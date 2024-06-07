@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { zodResolver } from "@hookform/resolvers/zod"
+import { zodResolver } from "@hookform/resolvers/zod";
 // import { CalendarIcon } from "@radix-ui/react-icons"
-import { format } from "date-fns"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
+import { format } from "date-fns";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Calendar } from "@/components/ui/calendar"
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Calendar } from "@/components/ui/calendar";
 import {
   Form,
   FormControl,
@@ -17,30 +17,30 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"
+} from "@/components/ui/form";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
+} from "@/components/ui/popover";
 
 const FormSchema = z.object({
   dob: z.date({
     required_error: "A date of birth is required.",
   }),
-})
+});
 
 export function CalendarForm() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
-  })
+  });
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
     // toast({
     //   title: "You submitted the following values:",
     //   description: (
     //     <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-    //       <code className="text-white">{JSON.stringify(data, null, 2)}</code>
+    //       <code className="text-black">{JSON.stringify(data, null, 2)}</code>
     //     </pre>
     //   ),
     // })
@@ -67,7 +67,7 @@ export function CalendarForm() {
                       {field.value ? (
                         format(field.value, "PPP")
                       ) : (
-                        <span className="text-white hover:text-orange-800 ">Chọn ngày</span>
+                        <span className="text-black hover:text-orange-800 ">Chọn ngày</span>
                       )}
                       {/* <CalendarIcon className="ml-auto h-4 w-4 opacity-50" /> */}
                     </Button>
@@ -76,7 +76,7 @@ export function CalendarForm() {
                 <PopoverContent className="w-auto p-0 bg-slate-700" align="start">
                   <Calendar
                     mode="single"
-                    className="text-white"
+                    className="text-black"
                     selected={field.value}
                     onSelect={field.onChange}
                     disabled={(date) =>
@@ -93,5 +93,5 @@ export function CalendarForm() {
         <Button type="submit">Submit</Button>
       </form>
     </Form>
-  )
+  );
 }
